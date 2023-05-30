@@ -19,10 +19,17 @@ fer13=[1320,600,600,100]
 def setup():
     fullScreen()
     background(242,202,39)
+    textSize(50)
+    text(u"Инструкция:",40,100)
+    text(u"Вверх - w",40,150)
+    text(u"Вниз - s",40,200)
+    text(u"Влево - a",40,250)
+    text(u"Вправо - d",40,300)
 def draw():
     global a, b, s
     fill(255)
     rect(a,b,100,100)
+    
     if keyPressed:
         if key == 'd':
             a = a + 5 
